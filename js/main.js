@@ -40,6 +40,11 @@ function resetBorderRadius(){
     box.style.borderBottomLeftRadius = 0;
     box.style.borderTopRightRadius = 0;
     box.style.borderBottomRightRadius = 0;
+
+    topLeft.value = 0;
+    bottomLeft.value = 0;
+    topRight.value = 0;
+    bottomRight.value = 0;
 }
 function resetCodeCss(){
     css_code.innerHTML = "border-radius: 0% 0% 0% 0%";
