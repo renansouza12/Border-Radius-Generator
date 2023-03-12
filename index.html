@@ -7,7 +7,40 @@
     <link rel="stylesheet" href="dist/output.css">
     <title>Border Radius Generator</title>
 </head>
-<body >
+<body class="h-screen bg-[#16161a] grid place-content-center">
+    <div class="">
+
+        <h1>Border Radius Generator</h1>
+
+        <div class="slider-container">
+            <label>Top Left </label>
+            <input type="range" min="0" max="100" class="slider" id="topLeft">
+        </div>
+
+        <div class="">
+            <div class="slider-container">
+                <label>Bottom Left</label>
+                <input type="range" min="0" max="100" class="slider" id="bottomLeft">
+            </div>
+
+            <div class="box h-[20rem] w-[20rem] bg-[#7f5af0]"></div>
+
+            <div class="slider-container">
+                <label>Top Right</label>
+                <input type="range" min="0" max="100"  class="slider"id="topRight">
+            </div>
+        </div>
+
+        <div class="slider-containr">
+            <input type="range" min="0" max="100" class="slider" id="bottomRight">
+            <label>Bottom Right</label>
+        </div>
+        <span class="css-code ">border-radius: 0% 0% 0% 0%</span>
+        <div class="buttons">
+            <button id="copy-css" ></button>
+            <button id="reset"></button>
+        </div>
+    </div>
     <script src="/js/main.js"></script>
 </body>
-</html>
+</html> 
