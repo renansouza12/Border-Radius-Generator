@@ -8,6 +8,9 @@ module.exports = {
   theme: {
     fontFamily:{
       'Poppins':[ 'Poppins', 'sans-serif']
+    }, 
+    screens:{
+      'mobile':'320px',
     },
     extend: {},
   },
