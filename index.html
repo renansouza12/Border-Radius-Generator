@@ -11,7 +11,7 @@
     <title>Border Radius Generator</title>
 </head>
 <body class="h-screen bg-[#16161a] grid place-content-center">
-    <div class="flex flex-col justify-center items-center font-Poppins text-white">
+    <div class="flex flex-col justify-center items-center font-Poppins text-white ">
 
         <h1 class="text-3xl mb-5">Border Radius Generator</h1>
 
@@ -20,15 +20,15 @@
             <input type="range" min="0" max="100" class="slider" id="topLeft">
         </div>
 
-        <div class="">
-            <div class="slider-container">
+        <div class="flex justify-between items-center">
+            <div class="slider-container rotate-[-90deg]">
                 <label>Bottom Left</label>
                 <input type="range" min="0" max="100" class="slider" id="bottomLeft">
             </div>
 
-            <div class="box h-[20rem] w-[20rem] bg-[#7f5af0]"></div>
+            <div class="box h-[13rem] w-[13rem] bg-[#7f5af0] my-11"></div>
 
-            <div class="slider-container">
+            <div class="slider-container rotate-[90deg]">
                 <label>Top Right</label>
                 <input type="range" min="0" max="100"  class="slider"id="topRight">
             </div>
@@ -38,10 +38,10 @@
             <input type="range" min="0" max="100" class="slider" id="bottomRight">
             <label>Bottom Right</label>
         </div>
-        <span class="css-code ">border-radius: 0% 0% 0% 0%</span>
-        <div class="buttons">
-            <button id="copy-css" ></button>
-            <button id="reset"></button>
+        <span class="css-code text-2xl my-6 ">border-radius: 0% 0% 0% 0%</span>
+        <div class="buttons flex gap-5">
+            <button id="copy-css">Copy Css</button>
+            <button id="reset">Reset</button>
         </div>
     </div>
     <script src="/js/main.js"></script>
