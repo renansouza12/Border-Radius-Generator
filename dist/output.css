@@ -426,6 +426,8 @@ video {
 }
 
 label {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
   font-size: 1.5rem;
   line-height: 2rem;
 }

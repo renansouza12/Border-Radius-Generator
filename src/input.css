@@ -7,7 +7,7 @@
         @apply flex flex-col text-center
     }
     label{
-        @apply text-2xl 
+        @apply text-2xl my-5
     }
     input{
         @apply appearance-none h-2 w-[13rem] rounded-xl bg-slate-800 
