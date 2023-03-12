@@ -14,7 +14,10 @@ sliders.forEach((slider)=>{
         showBorderRadiusCode();
     })
 })
+
 btn_copyCss.addEventListener("click",copyCodeCss);
+btn_reset.addEventListener("click",resetBorderRadius);
+btn_reset.addEventListener("click",resetCodeCss);
 
 function changeBorderRadius(){
     box.style.borderTopLeftRadius = topLeft.value + '%';
@@ -30,4 +33,14 @@ function showBorderRadiusCode(){
 async function copyCodeCss(){
     const code = css_code.innerHTML;
     await navigator.clipboard.writeText(code);
+}
+
+function resetBorderRadius(){
+    box.style.borderTopLeftRadius = 0;
+    box.style.borderBottomLeftRadius = 0;
+    box.style.borderTopRightRadius = 0;
+    box.style.borderBottomRightRadius = 0;
+}
+function resetCodeCss(){
+    css_code.innerHTML = "border-radius: 0% 0% 0% 0%";
 }
